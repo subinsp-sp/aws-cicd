@@ -18,6 +18,12 @@ public class CicdApplication {
 		return "This is my first commit to GitHub ";
 	}
 
+	@GetMapping("/second")
+	public String secondDeployment(){
+		return "This is my Second commit to GitHub ";
+	}
+
+
 	@GetMapping
 	public String welcome(){
 		return "Welcome to CICD demo app";
