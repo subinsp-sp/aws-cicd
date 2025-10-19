@@ -14,5 +14,7 @@ phases:
       - echo Build completed successfully
 artifacts:
   files:
-    - target/cicd.jar
+    - cicd.jar
+  base-directory: target
   discard-paths: yes
+
