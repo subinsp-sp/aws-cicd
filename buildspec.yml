@@ -7,14 +7,14 @@ phases:
       - mvn install -DskipTests
   build:
     commands:
-      - echo Entered the build phase...
+      - echo Building the Spring Boot app...
       - mvn clean package
   post_build:
     commands:
       - echo Build completed successfully
-artifacts:
-  files:
-    - cicd.jar
-  base-directory: target
-  discard-paths: yes
 
+artifacts:
+  # With CodePipeline as artifact type, these settings are enough
+  files:
+    - target/*.jar
+  discard-paths: yes
