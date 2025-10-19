@@ -15,7 +15,7 @@ public class CicdApplication {
 
 	@GetMapping("/first")
 	public String firstDeployment(){
-		return "This is my first commit to GitHub";
+		return "This is my first commit to GitHub ";
 	}
 
 	@GetMapping
